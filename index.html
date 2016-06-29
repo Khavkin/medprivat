@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <style>
+  #ServiceCarousel{
+    margin-bottom: 30px;
+  }
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  .carousel-inner > div {
+      height:  400px;
+      background-color: black;
+   }
+   .ExpertList li{
+     display:  inline-block;
+	 list-style: none;
+	 font-size: 140%;
+   }
+   ul.ExpertList {
+     padding-right: 40px;
+   }
+   #Expert{
+     background-color: #554455;
+   }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <br>
+  <div id="ServiceCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#ServiceCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#ServiceCarousel" data-slide-to="1"></li>
+      <li data-target="#ServiceCarousel" data-slide-to="2"></li>
+      <li data-target="#ServiceCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+	    <a href="#emergency"> 
+          <!-- <img src="img_chania.jpg" alt="Chania" width="460" height="345">  -->
+          <div class="carousel-caption">
+            <h2>МЕД-ПРИВАТ</h2>
+            <h3>Круглосуточная медицинская помощь на дому взрослым и детям</h3>
+          </div>
+		</a>  
+      </div>
+
+      <div class="item">
+	    <a href="#experts">
+        <!-- <img src="img_chania2.jpg" alt="Chania" width="460" height="345">-->
+        <div class="carousel-caption">
+            <h2>МЕД-ПРИВАТ</h2>
+            <h3>Выезд специалиста любого профиля на дом (осмотр, консультацию, назначение лечения): терапевт, кардиолог,гастроэнтеролог, невропатолог, хирург, уролог, аллерголог, педиатр,гинеколог, маммолог, онколог, окулист и др.</h3>
+        </div>
+		</a>
+      </div>
+    
+      <div class="item">
+        <img src="img_flower.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h2>МЕД-ПРИВАТ</h2>
+          <h3>Снятие похмельного синдрома (алкогольная интоксикация, вывод из запоя)</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img_flower2.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h2>МЕД-ПРИВАТ</h2>
+          <h3>Транспортировка на машине скорой медицинской помощи в сопровождении медицинской бригады</h3>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#ServiceCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#ServiceCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+    
+	
+	<!-- Emergency info -->
+  	<div class="jumbotron" id="Emergency">
+	  <a name="emergency"></a>
+      <h1>Неотложная помощь на дому</h1>
+      <h2>Неотложная медицинская помощь «МЕД-ПРИВАТ» доступна 24 часа в сутки, 7 дней в неделю! </h2>
+	  <p>Выезд дежурной бригады осуществляется в течении одного часа:</p>
+      <ul>
+        <li>в службе работают врачи и фельдшера высших категорий, в том числе реаниматологи и анестезиологи;</li>
+        <li>консультация, назначение лечения;</li>
+        <li>оказание медицинской помощи - полный ассортимент медикаментов, лабораторная экспресс- диагностика;</li>
+        <li>снятие электрокардиограммы с расшифровкой;</li>
+        <li>все манипуляции квалифицированной мед. сестрой.</li>
+      </ul>
+    </div>
+
+	<!-- Emergency info -->
+  	<div class="jumbotron" id="Expert">
+	  <a name="experts"></a>
+      <h1>ВЫЗОВ УЗКОГО СПЕЦИАЛИСТА</h1>
+      <h2>Если состояние вашего здоровья не позволяет посетить клинику, вы можете вызвать врача на дом. При необходимости на дом приедет не только терапевт, но и узкий специалист, в услугах которого вы нуждаетесь</h2>
+	  <p>"МЕД-ПРИВАТ" предоставляет такую услугу, как вызов узкого специалиста на дом, а именно:</p>
+      <ul class="ExpertList ">
+        <li class="label label-default">Хирург</li>
+        <li class="label label-primary">Травматолог</li>
+        <li class="label label-success">ЛОР</li>
+        <li class="label label-info">Невропатолог</li>
+        <li class="label label-warning">Онколог</li>
+        <li class="label label-danger">Окулист</li>
+        <li class="label label-default">Нейрохирург</li>
+        <li class="label label-primary">Кардиолог</li>
+        <li class="label label-success">Дерматолог</li>
+        <li class="label label-info">Гастроэнтеролог</li>
+        <li class="label label-warning">Аллерголог</li>
+        <li class="label label-danger">Уролог</li>
+        <li class="label label-default">Эндокринолог</li>
+        <li class="label label-primary">Педиатр</li>
+        <li class="label label-success">Терапевт</li>
+      </ul>
+	  <p></p>
+    </div>	
+	
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
