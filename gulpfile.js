@@ -65,7 +65,7 @@ gulp.task('clean-img', function(cb){
 });
 
 gulp.task('fonts',['clean-fonts'],function(cb){
-	gulp.src('src/fonts/*.*')
+	gulp.src('src/fonts/**/*.*')
 		.pipe(gulp.dest('public/fonts'));
 	cb();
 });
